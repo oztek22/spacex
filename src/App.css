@@ -1,0 +1,64 @@
+.app {
+  background: #20262E;
+  height: 100vh;
+  padding: 20px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.grid-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5px;
+  padding: 7px 10px;
+  background: #2D333B;
+}
+.grid-list-options i, .grid-list-options span {
+  display: inline-flex;
+  margin-right: 7px;
+  padding: 1px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.1s ease-out;
+}
+.grid-list-options i.active, .grid-list-options span.active {
+  border-bottom: 1px solid deepskyblue;
+}
+.grid-list-options i:last-child {
+  margin-right: 0;
+}
+.grid-list-options i:hover, .grid-list-options span:hover {
+  color: #33abf4;
+  transition: all 0.2s ease-in;
+}
+
+
+.grid-list-view {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+.grid-list-view.list {
+  margin-top: 10px;
+  width: -webkit-fill-available;
+}
+.grid-list-view.list thead td {
+  font-size: 18px;
+  border-bottom: 1px solid #2D333B;
+}
+.grid-list-view.list thead td p {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.grid-list-view.list thead td i {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.grid-list-view.list thead td i:hover {
+  color: #0571D6;
+  transition: all 0.2s ease-in;
+}
+.grid-list-view.list td {
+  padding: 0 10px;
+}
